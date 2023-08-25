@@ -1,0 +1,16 @@
+h1,h2,h3{
+    color:aqua;
+    background-color:red;
+}
+p{
+    color:aqua;
+    background-color: red;
+}
+div{
+    height: 150px;
+    width: 1000px;
+    background-color: rgb(2, 106, 42);
+}
+b{
+    color: rgb(205, 186, 186);
+}
