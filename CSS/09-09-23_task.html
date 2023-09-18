@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        #a {
+            width: 100%;
+            height: 200px;
+            background-image: url(./../multi_media_files/ship-gfd5b68021_1280.jpg);
+            /* background-repeat: no-repeat; */
+        }
+
+        #b {
+            width: 100%;
+            height: 506px;
+            background-image: url(./../multi_media_files/generic.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 506px;
+            background-position: 0px;
+        }
+
+        h1 {
+            font-size: 150px;
+            font-style: italic;
+            color: white;
+            text-align: center;
+            letter-spacing: 30px;
+        }
+
+        #c {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+
+        #d {
+            width: 400px;
+            height: 400px;
+            background-color: grey;
+            position: relative;
+            bottom: 350px;
+            left: 500px;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 25px;
+            color: whitesmoke;
+            padding-top: 20px;
+        }
+
+        .i {
+            width: 300px;
+            height: 30px;
+            border: 4px solid black;
+            border-radius: 20px;
+            position: relative;
+            left: 40px;
+            top: 40px;
+        }
+
+        button {
+            position: relative;
+            top: 65px;
+            left: 90px;
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+        
+        }
+        #tr{
+            width: 150px;
+            height: 400px;
+            background-color: rgba(128, 128, 128, 0.568);
+            position: relative;
+            bottom: 750px;
+            left: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a">
+        <h1>Get out !</h1>
+    </div>
+    <div id="b">
+        <div id="c"><video src="./../multi_media_files/video1_pirates.mp4" style="height: 400px;width: 400px;" controls loop muted autoplay></video></div>
+        <div id="d">
+            <h2>LOGIN</h2>
+            <form action="">
+                <input type="text" placeholder="Emailid or Number" class="i"> <br><br>
+                <input type="password" placeholder="Password" class="i">
+                <button>Login</button>
+            </form>
+        </div>
+        <div id="tr"></div>
+    </div>
+</body>
+
+</html>
