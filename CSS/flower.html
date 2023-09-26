@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            
+            position: relative;
+            left: 500px;
+            top: 300px;
+            animation: flower 20s infinite;
+        }
+        @keyframes flower {
+            from{
+                filter:hue-rotate(0deg);
+            }
+            to{
+                filter: hue-rotate(2000deg);
+            }
+            
+        }
+        .common{
+            width: 300px;
+            height: 300px;
+            background-color: deeppink;
+            margin: 10px;
+            border-radius: 300px 0px 300px 0px;
+            position: absolute;
+            right: -10px;
+            top: -140px;
+            rotate: -45deg;
+            transition: all 20s;
+        }
+        .container:hover .child1{
+            rotate: -25deg;
+        }
+        .container:hover .child2{
+            rotate: 0deg;
+        }
+        .container:hover .child3{
+            rotate: -65deg;
+        }
+        .container:hover .child4{
+            rotate: -90deg;
+        }
+        .box{
+            position: absolute;
+            left: -20px;
+            width: 350px;
+            height: 300px;
+            background-color: burlywood;
+            border-radius: 0px 0px 300px 300px;
+            
+
+        }
+        audio{
+            
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="common  child1"></div>
+        <div class="common  child2"></div>
+        <div class="common  child3"></div>
+        <div class="common  child4"></div>
+        <div class="common  child5"></div>
+        <div class="box"></div>
+        <audio src="audio4.html.mp3"></audio>
+        
+        
+</div>
+    
+</body>
+</html>

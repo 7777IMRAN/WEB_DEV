@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // abc()
+        // function abc()
+        // {
+        //     console.log('welcome to function')
+        // }
+        // abc()
+        function areaOfCircle(radius)
+        {
+            const PI=3.14
+            let areaOfCircle=PI*radius*radius
+            console.log('The area of circle is:'+areaOfCircle)
+            console.log(`The area of circle is: ${areaOfCircle}`)
+            return areaOfCircle
+        }
+        let a=areaOfCircle(5)
+        function areaOfRectangle(length,breadth)
+        {
+            let areaOfRectangle=length*breadth
+            console.log('The area of Rectangle is:'+areaOfRectangle)
+            console.log(`The area of Rectangle is: ${areaOfRectangle}`)
+            return areaOfRectangle
+        }
+        let b=areaOfRectangle(a,9)
+        function areaOfTriangle(l,b)
+        {
+            let d=0.5
+            let areaOfTriangle=d*l*b
+            console.log(`The area of Triangle is:${areaOfTriangle}`)
+            return areaOfTriangle
+        }
+        areaOfTriangle(4,5)
+        let c=areaOfTriangle(a,b)
+        // document.write(`area of circle is ${a}`); 
+        // document.write(`area of rectangle is ${b}`);
+        // document.write(`area of Triangle is ${c}`)
+
+    </script>
+    
+</body>
+</html>

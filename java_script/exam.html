@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function GlassBoul(mutton,masala)
+        {
+            let c=mutton+' + '+masala
+            console.log(c)
+            return c
+        }
+        a=prompt('Enter MUTTON in kg')
+        b=prompt('Enter Masala_name')
+        let marinated=GlassBoul(a,b)
+        function CookingBoul()
+        {
+            let water=prompt('Enter WATER in liters')
+            cookedmutton=marinated+ ' + '+water
+            console.log(cookedmutton)
+            return cookedmutton
+        }
+        let cookedmutton1=CookingBoul()
+        function eatingPlate()
+        {
+            let rice=prompt('Enter RICE in kg')
+            biryani=rice+' + '+cookedmutton1
+            return biryani
+        }
+        // eatingPlate()
+        console.log(eatingPlate())
+
+    </script>
+</body>
+</html>
