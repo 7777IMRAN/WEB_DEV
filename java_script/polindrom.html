@@ -9,14 +9,22 @@
     <script>
         a=prompt('enter value')
         rev=''
-        // while (a)
-        // {
-        // ld=a%10
-        // rev+=rev*10+ld 
-        // a=parseInt(a/10)   
-        // }
-        console.log(typeof(a))
-        console.log(a)
+        i=0
+        while (i<a.length)
+        {
+            rev=a[i]+rev
+            i+=1
+        }
+        if (a==rev)
+        {
+            alert(rev)
+            alert(typeof(rev))
+            let rev1=parseInt(rev)
+            alert('palindrom')
+        }
+        else{
+            alert('not palindrom')
+        }
 
     </script>
 </body>
