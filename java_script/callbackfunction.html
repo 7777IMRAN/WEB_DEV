@@ -66,14 +66,16 @@
         // a()
         // ----------------------------------
         // calling function with arrow function
-        function abc()
+        function abc(a)
         {
-            console.log(a)
+            console.log(a())
+            a()
+            
         }
         abc(
             ()=>{
-                console.log('wellcome')
-                // console.log(a)
+                console.log('callback function by arrow function')
+                return 'wellcome'
             }
         )
         // --------------------------------------
