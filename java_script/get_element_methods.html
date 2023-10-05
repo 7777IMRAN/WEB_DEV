@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to tag name</h1>
+    <h1>welcome to tag name</h1>
+    <h1 class="abc">welcome to tag name</h1>
+    <h1>welcome to tag name</h1>
+    <p>welcome</p>
+    <p class="abc">welcome</p>
+    <p>welcome</p>
+    <p class="abc">welcome</p>
+    <p>welcome</p>
+    <p class="abc">welcome</p>
+    <button onclick="demo()">button</button>
+
+    <script>
+        function demo()
+        {
+            // console.log(screen)
+            let num=document.getElementsByTagName('h1')
+            // for (i=0;i<num.length;i++)
+            // {
+            //     num[i].style.backgroundColor='aqua'
+            //     num[i].style.color='yellow'
+
+            // }
+            // num[0].style.backgroundColor='aqua'
+            // num[1].style.backgroundColor='aqua'
+            // num[2].style.backgroundColor='aqua'
+            // num[3].style.backgroundColor='aqua'
+           // target by class name
+           let num1=document.getElementsByClassName("abc")
+           console.log(num1)
+           for (i=0;i<num1.length;i++)
+           {
+            num1[i].style.backgroundColor="red"
+            num1[i].style.color='white'
+            num1[i].style.padding='20px'
+           }
+
+        }
+    </script>
+</body>
+</html>
