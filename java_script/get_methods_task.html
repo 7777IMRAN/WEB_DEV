@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input{
+            font-size: 200PX;
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <h1>select your skills</h1>
+    <input type="checkbox" >JAVA <br>
+    <input type="checkbox">WEB-Technology <br>
+    <input type="checkbox">React JS <br>
+    <input type="checkbox">Angular JS <br>
+    <input type="checkbox">SQL <br>
+    <input type="checkbox">Python <br>
+    <input type="checkbox">Manual Testing <br>
+    <input type="checkbox">ALL <br>
+    <button onclick="demo()"> Submit</button> <br>
+    <h1 id="res"></h1>
+    <script>
+        function demo()
+        {    
+            let box=document.getElementsByTagName('input')
+            // let box=document.querySelectorAll('input')
+            console.log(box)
+            let count=0
+            for (i=0;i<box.length;i++)
+            {
+                if (box[i].checked==true)
+                {
+                    count++
+                }
+            }
+            console.log(count)
+            let job=document.getElementById('res')
+            // console.log(job)
+            if(3<=count & count<=4)
+            {
+                job.innerHTML='Eligible for 1 Job'
+                job.style.color=`green`
+            }
+            else if(count==5 ^ count==6)
+            {
+                job.innerHTML='Eligible for 2 Jobs'
+                job.style.color=`green`
+            }
+            else if (count==7)
+            {
+                job.innerHTML='Eligible for all Job'
+                job.style.color=`green`
+                // ---------
+                if (box[box.length-1].checked==false)
+                {
+                    console.log('all')
+                    box[box.length-1].checked=true
+
+                }
+                // -----------
+            }
+            else if(count==1 & box[7].checked==true)
+            {
+                for(j=0;j<box.length-1;j++)
+                {
+                    box[j].checked=true
+                }
+            }
+            else 
+            {
+                job.innerHTML='Not Eligible for any Job'
+                job.style.color=`red`
+            }
+
+    }
+    b=document.body
+    console.log(b)
+    </script>
+</body>
+</html>

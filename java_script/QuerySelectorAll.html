@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to queryselectorAll 1</h1>
+    <h1>welcome to queryselectorAll 2</h1>
+    <h1 title="abc1">welcome to queryselectorAll 3</h1>
+    <h1 title="abc2">welcome to queryselectorAll 4</h1>
+    <h1 title="abc3">welcome to queryselectorAll 5</h1>
+    <button onclick="demo()">click</button>
+    <script>
+        function demo()
+        {
+            // let a=document.querySelector('h1')
+            // let a=document.querySelectorAll('h1')
+            // console.log(a)
+            // for (i=0;i<a.length;i++)
+            // {
+            //     a[i].style.color='deeppink'
+            // }
+            let b=document.querySelectorAll('[title="abc1"]')
+            console.log(b)
+            b[0].style.color='blue'
+        }
+    </script>
+</body>
+</html>

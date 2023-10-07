@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">ENTER NAME</label> <input type="text" name="" id="name" class="name" title="anything"> <br>
+    <button onclick="display()">CLICK</button>
+    <script>
+        function display()
+        {
+            // let name1=document.querySelector('input').value
+            // let name1=document.querySelector('#name').value
+            // let name1=document.querySelector('.name').value
+            // let name1=document.querySelector('[title]').value
+            let name1=document.querySelector("[title='anything']").value
+
+            console.log(name1)
+        }
+    </script> <br>
+    <!-- ways we can use:tag name,class,title,title value,id,(css)property....ex:name='anything' ,line no 10 -->
+</body>
+</html>
