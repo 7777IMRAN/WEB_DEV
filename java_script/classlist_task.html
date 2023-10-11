@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            /* display: flex;
+            justify-content: center; */
+/        }     
+        .div2{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative;  
+            top: 75px;
+            left: 75px;          
+        }
+        #h1{
+            display: inline;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>div task</h1>
+    <div id="d1">
+        <div id="d2"></div>
+    </div> <br>
+    <button onclick="demo()">click</button> <br>
+    <script>
+        function demo()
+        {
+        let d1=document.getElementById('d1')
+        console.log(d1)
+        d1.setAttribute('id','div1')
+        let d2=document.getElementById('d2')
+        console.log(d2)
+        d2.classList.add('div2')
+        let h1=document.querySelector('h1')
+        console.log(h1)
+        h1.setAttribute('id','h1')
+        }
+    </script>
+</body>
+</html>

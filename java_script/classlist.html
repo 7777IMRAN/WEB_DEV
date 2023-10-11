@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz{
+            background-color: rgb(20,77,120);
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            color: deeppink;
+        }
+        .xyz1{
+            background-color: deeppink;
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            color:rgb(20,77,120);
+ 
+        }
+        .abc{
+            font-size: 60px;
+            text-shadow: 1px 1px 1px aqua,-1px 1px 1px aqua,1px 1px -1px aqua,-1px -1px 1px aqua;
+        }
+        .div{
+            width: 300px;
+            height: 300px;
+            background-color: #ab56ef;
+            border: 5px dashed darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO CLASS LIST METHODS</h1>
+    <div></div>
+    <button onclick="demo()">click</button>
+    <script>
+        function demo()
+        {
+            let h1=document.querySelector('h1')
+            h1.classList.add('xyz')
+            // h1.classList.toggle('xyz')
+            h1.classList.toggle('abc')
+            // console.log(h1)
+            // h1.classList.remove('xyz')
+            h1.classList.replace('xyz','xyz1')
+            let a=h1.classList.contains('abc')
+            console.log(a)
+            console.log(h1)
+            let div1=document.querySelector('div')
+            div1.classList.add('div1')
+            let b=div.classList.contains('div3')
+            console.log(b)
+        }
+    </script>
+</body>
+</html>

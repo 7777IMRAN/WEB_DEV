@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            background-color: aqua;
+        }
+        #abc{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>welcome to dom</h1> -->
+    <script>
+        // let h1=document.createElement('h1')
+        // h1.innerHTML='WELCOME TO DOM MANIPULATION'
+        // console.log(h1)
+        // h1.classList.add('abc')
+        // let b=document.body
+        // b.append(h1)
+        // let i=document.createElement('i')
+        // i.innerHTML='WELCOME TO italic tag'
+        // i.setAttribute('id','abc')
+        // console.log(i)
+        // b.append(i)
+        let mar=document.createElement('marquee')
+        mar.innerHTML='welcome to marquee tag'
+        console.log(mar)
+        mar.direction='right'
+        mar.scrollAmount='30'
+        // mar.behavior='slide'
+        mar.loop='2'
+        mar.width='50%'
+        console.log(mar)
+        let body=document.body
+        body.append(mar)
+
+    </script>
+</body>
+</html>
