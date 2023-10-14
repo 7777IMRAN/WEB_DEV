@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <select name="" id="">
+        <option value="--select branch--">--select branch--</option>
+        <option value="EEE">EEE</option>
+        <option value="ECE">ECE</option>
+        <option value="DJSKLFJ">DJSKLFJ</option>
+        <option value="EWREWR">EWREWR</option>
+        <option value="UPOIOUO">UPOIOUO</option>
+    </select> -->
+<!-- <hr> -->
+<!-- datalist -->
+<!-- <input type="text" list="branch" placeholder="--select brabc--">
+<datalist id="brabc">
+    <option value="--select branch--">--select branch--</option>
+    <option value="EEE">EEE</option>
+    <option value="ECE">ECE</option>
+    <option value="DJSKLFJ">DJSKLFJ</option>
+    <option value="EWREWR">EWREWR</option>
+    <option value="UPOIOUO">UPOIOUO</option>
+</datalist>
+<label for="n">enter name</label>
+<input type="text" id="n"> -->
+
+<script>
+    let s=document.createElement('select')
+    let p=document.createElement('option')
+    p.innerHTML='--select option--'
+    s.append(p)
+
+    let arr=['g','o','p','q','j','m','y','v','w','a']
+    console.log(arr)
+    let arr1=arr.sort()
+    console.log(arr1)
+
+
+    for (i=0;i<arr1.length;i++)
+    {
+        let p1=document.createElement('option')
+        console.log(p1)
+        // p1.innerHTML=arr[i]
+        let c=document.createTextNode(arr1[i])
+        console.log(c)
+
+        p1.append(c)
+        s.append(p1)
+    }
+
+    let b=document.body
+    b.append(s)
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let img1=document.createElement('img')
+        img1.src='generic.jpeg'
+        img1.width='300'
+        img1.height='300'
+
+        let img2=document.createElement('img')
+        img2.src='generi.jpeg'
+        img2.width='300'
+        img2.height='300'
+        
+        let b=document.body
+        // b.append(img1)
+        b.append(img2)
+
+        b.replaceChild(img1,img2)
+        b.removeChild(img1)
+        b.append(img2)
+    </script>
+</body>
+</html>

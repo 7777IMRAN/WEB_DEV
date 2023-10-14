@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let h=document.createElement('h1')
+        h.innerHTML='welcome to heading tag'
+
+        let img=document.createElement('img')
+        h.innerHTML='welcome to heading'
+        img.src='generic.jpeg'
+        img.width='200'
+        img.height='200'
+
+        let v=document.createElement('video')
+        v.src='path.mp4'
+        v.width='200'
+        v.height='200'
+        v.controls='constrols'
+        let b=document.body
+        // b.append('hii good evening',h)
+        // b.append(img)
+        // b.appendchild(img)
+        // b.append(v)
+        // b.appendChild(v)
+        b.append(h,img,v)
+        b.insertBefore(v,h)
+        // b.insertBefore(img,v)
+    </script>
+</body>
+</html>
