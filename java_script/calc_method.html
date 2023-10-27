@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: calc(100px*var(--a));
+            height: calc(100px*var(--a));
+            /* background-color: aquamarine; */
+            background-color: var(--b);
+            rotate: calc(30deg*var(--a));
+            margin-left:300px ;
+        }
+        div:hover{
+            rotate: calc(30deg*var(--c));
+        }
+
+    </style>
+</head>
+<body>
+    <div style="--a:1;--b:red;"></div>
+    <div style="--a:2;--b:blue;"></div>
+    <div style="--a:3;--b:orange;"></div>
+    <div style="--a:4;--b:pink;"></div>
+</body>
+</html>
