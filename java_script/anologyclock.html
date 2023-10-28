@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 700px;
+            flex-direction: column;
+            background-color: black;
+        }
+        .container{
+            position: relative;
+        }
+        .clock{
+            width: 300px;
+            height: 300px;
+            background-color:crimson;
+            border-radius: 50%;
+            border: 3px solid rgb(6, 202, 246);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        /* .clock span{
+            -----this will also works same
+        } */
+        span {
+            position: absolute;
+            transform: rotate(calc( 30deg*var(--a)));
+            inset: 9px;
+            text-align: center;
+        }
+                /* .clock span i{
+            -----this will also works same
+        } */
+
+         i{
+            transform: rotate(calc(-30deg*var(--a)));
+            display: block;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            /* display: inline; */
+        }
+        .a{
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color:white;
+            border-radius: 50%;
+        }
+        b{
+            position: absolute;
+            width: 4px;
+            /* height: 70px; */
+            height: var(--h);
+            /* background-color: black; */
+            background-color: var(--c);
+            border-radius: 30px;
+   
+        }
+        .needle{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; 
+            z-index: 1;           
+        }
+
+        .clock::before{
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color:white;
+            position: absolute;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 style="color: white;">WELCOME TO ANOLOGY CLOCK</h1>
+    <div class="container">
+        <div class="clock">
+            <div class="needle" id="sec" style="--h:70px;--c:yellow;"><b></b></div>
+            <div class="needle" id="min" style="--h:60px;--c:green;"><b></b></div>
+            <div class="needle" id="hour" style="--h:50px;--c:black;"><b></b></div>
+            <div class="a"></div>
+            <span style="--a:1"> <i>1</i></span>
+            <span style="--a:2"> <i>2</i></span>
+            <span style="--a:3"> <i>3</i></span>
+            <span style="--a:4"> <i>4</i></span>
+            <span style="--a:5"> <i>5</i></span>
+            <span style="--a:6"> <i>6</i></span>
+            <span style="--a:7"> <i>7</i></span>
+            <span style="--a:8"> <i>8</i></span>
+            <span style="--a:9"> <i>9</i></span>
+            <span style="--a:10"> <i>10</i></span>
+            <span style="--a:11"> <i>11</i></span>
+            <span style="--a:12"> <i>12</i></span>
+        </div>
+    </div>
+    <script>
+        function displayClock()
+        {
+            let h=document.getElementById('hour')
+            let m=document.getElementById('min')
+            let s=document.getElementById('sec')
+
+            let date=new Date()
+            hh=date.getHours()
+            mm=date.getMinutes()
+            ss=date.getSeconds()
+            let h1=30*hh+min/2
+            // console.log(h1)
+            let m1=6*mm
+            let s1=6*ss
+            h.style.transform=`rotate(${h1}deg)`
+            m.style.transform=`rotate(${m1}deg)`
+            s.style.transform=`rotate(${s1}deg)`
+        }
+        setInterval(() => {
+            displayClock()
+        }, 1000);
+    </script>
+</body>
+</html>
