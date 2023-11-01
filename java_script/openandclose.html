@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 1px;
+            height: 1px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <input type="text" id="inp1">
+    <br>
+    <button id="b1">open</button>
+    <button id="b2">close</button>
+    <script>
+        function open1()
+        {
+            let inp1=document.querySelector('#inp1').value
+            window.open(`https://www.${inp1}.com`)
+        }
+        document.querySelector('#b1').addEventListener('click',open1)
+        function close1()
+        {
+            window.close()
+        }
+        document.getElementById('b2').addEventListener('click',close1)
+    </script>
+</body>
+</html>
