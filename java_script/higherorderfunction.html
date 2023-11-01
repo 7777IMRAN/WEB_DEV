@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // shift() :deletes the starting element in collection
+        // unshift(): add the element in starting of collection
+        // push() : adding the element in ending of collention
+        // pop() : deleting the element in ending of collection
+        let arr=[1,3,4,5,6,8]
+        // for (i=0;i<arr.length;i++){
+        //     // console.log(arr[i])
+        //     if (arr[i]%2==0)
+        //     {
+        //         console.log(arr[i])
+        //     }
+        // }
+        // let b=arr.map((num)=>{
+        //     // console.log(num)
+        //     //         if (num%2==0)
+        //     // {
+        //     //     console.log(num)
+        //     // }
+        //     return num*2
+        // })
+        // console.log(b)
+        // arr.forEach((num)=>{
+        //     console.log(num)
+        // })
+// let b=arr.slice(-6,-2)
+// console.log(b)
+
+// let arr2=[]
+// arr.forEach((num)=>    //return is not possible
+// {
+//     // console.log(num)
+//             // if (num%2==0)
+//             // {
+//             //     console.log(num)
+//             // }
+//     arr2.push(num*3)
+
+// })
+// console.log(arr2)
+c=[]
+let arrr=[1,30,40,50,70,90,2,3,4,5]
+// for (i=0;i<arrr.length;i++){
+//     if (arrr[i]>20)
+//     {
+//         // console.log(arrr[i])
+//         c.push(arrr[i])
+//     }
+// }
+// console.log(c)
+//  let a=arrr.filter((num)=>
+//  {
+//     // console.log(num)
+//     if (num>20)
+//     {
+//         c.push(num)
+//     }
+// })
+// console.log(c)
+
+// let b=arrr.every((num)=>   //if every condition is true then only return True else every() will return False
+// {
+//     // console.log(num)
+//     if (num>1)
+//     {
+//         // b.push(num)
+//         return num
+//     }
+// })
+// console.log(b)
+
+// let b=arrr.some((num)=>  // if any one condition is True then some() will return True
+// {
+//     // console.log(num)
+//     if (num>1)
+//     {
+//         // b.push(num)
+//         return num
+//     }
+// })
+// console.log(b)
+
+// reduce() : this function will return only one value
+let ar=[1,2,4,6,7,1]
+let b=ar.reduce((accumulation_value,current_value)=>{      //reduce(var1,var2)
+    // console.log(accumulation_value)
+    // console.log(current_value)
+    return (accumulation_value+current_value)
+})
+console.log(b)
+
+if (b%2==0)
+{
+    console.log('even number')
+}
+else{
+    console.log('odd number')
+}
+    </script>
+</body>
+</html>
